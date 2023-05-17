@@ -1,12 +1,26 @@
-<?php $title = "GP Park"; ?>
+<!DOCTYPE html>
+<html lang="fr">
 
-<?php ob_start(); ?>
-<div class="choice">
-    <a href="loisir.php" class="choice--loisir choice--item">LOISIR</a>
-    <a href="academy.php" class="choice--academy choice--item">ACADEMY</a>
-    <div class="choice--background"></div>
-</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
-<?php $content = ob_get_clean(); ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-<?php require("template/layout.php") ?>
+    <title>GP Park</title>
+</head>
+
+<body>
+    <div class="choice">
+        <a href="loisir.php" class="choice--loisir choice--item">LOISIR</a>
+        <a href="academy.php" class="choice--academy choice--item">ACADEMY</a>
+        <div class="choice--background"></div>
+    </div>
+</body>
+
+</html>
