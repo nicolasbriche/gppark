@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 502 502">
+  <g id="ViewBox">
+    <rect x="1" y="1" width="500" height="500" style="fill: none; stroke: #000; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  </g>
+  <g id="moto">
+    <circle cx="106.41" cy="375.31" r="68.31" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    <circle cx="390.92" cy="375.31" r="68.31" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    <line x1="106.41" y1="375.31" x2="163.88" y2="290.55" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    <line x1="390.92" y1="375.31" x2="340.39" y2="290.55" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    <path d="m70.79,261.53s145.08,2.42,136.62,122.11h81s5.54-102.76,102.51-110.02c0,0,8.72-60.45-74.7-81,0,0-8.46,60.45-48.36,67.7,0,0-120.9-61.66-197.06,1.21Z" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+    <path d="m185.59,235.33s47.8-42.01,115.33,0" style="fill: none; stroke: #000; stroke-miterlimit: 10;"/>
+  </g>
+</svg>
