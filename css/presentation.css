@@ -1,0 +1,120 @@
+/**********          PRESENTATION          **********/
+@media screen {
+    .presentation {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1000px) {
+        .presentation {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+    }
+}
+
+/**********          BIKE          **********/
+@media screen {
+    .presentation--bike {
+        width: 80vw;
+        align-self: center;
+    }
+
+    @media screen and (min-width: 1000px) {
+        .presentation--bike {
+            width: 40vw;
+        }
+    }
+}
+
+/**********          TEXT          **********/
+@media screen {
+    .presentation--text {
+        width: 80vw;
+        padding: 20px;
+        align-self: center;
+        text-align: justify;
+
+        border-radius: 1vw;
+
+        color: var(--text-color);
+
+        backdrop-filter: var(--glass-blur);
+        background: var(--glass-color);
+        box-shadow: 10px 10px 20px var(--glass-shadow);
+    }
+
+    .presentation--text span {
+        display: block;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        .presentation--text {
+            width: 40vw;
+        }
+    }
+}
+
+/**********          BACKGROUND          **********/
+@media screen {
+    .presentation--background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+    }
+
+    .presentation--background-circle {
+        width: 50vw;
+        height: 50vw;
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(10vw);
+    }
+
+    .presentation--background-red-circle {
+        top: -2vw;
+        left: 50vw;
+        background-color: var(--red);
+    }
+
+    .presentation--background-blue-circle {
+        background-color: var(--blue);
+        top: 34vw;
+        left: 14vw;
+    }
+
+    .main--academy .presentation--background-red-circle {
+        background-color: var(--yellow);
+    }
+
+    .main--academy .presentation--background-blue-circle {
+        background-color: var(--red);
+    }
+
+    @media screen and (min-width: 1000px) {
+        .presentation--background-circle {
+            width: 25vw;
+            height: 25vw;
+            filter: blur(5vw);
+        }
+
+        .presentation--background-red-circle {
+            top: -2vw;
+            left: 28vw;
+        }
+
+        .presentation--background-blue-circle {
+            top: 14vw;
+            left: 14vw;
+        }
+    }
+}

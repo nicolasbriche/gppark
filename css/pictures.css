@@ -1,0 +1,50 @@
+/**********          PICTURES          **********/
+@media screen {
+    .pictures {
+        width: 100%;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        overflow-x: scroll;
+        background-color: var(--background);
+    }
+}
+
+/**********          TITLE          **********/
+@media screen {
+    .pictures .section-title {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+}
+
+/**********          TAGLINE          **********/
+@media screen {
+    .pictures .section-tagline {
+        position: sticky;
+
+        left: 0;
+    }
+}
+
+/**********          GALLERY          **********/
+@media screen {
+    .pictures--gallery {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/**********          GALLERY ROW          **********/
+@media screen {
+    .pictures--gallery--row {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+    }
+
+    .pictures--gallery--row img {
+        height: 200px;
+    }
+}

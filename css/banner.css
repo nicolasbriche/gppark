@@ -1,0 +1,199 @@
+/**********          BANNER          **********/
+@media screen {
+    .banner {
+        overflow: hidden;
+    }
+}
+
+/**********          IMG          **********/
+@media screen {
+    @media screen and (orientation: portrait) {
+        .banner--image {
+            height: 100vh;
+            margin-left: -30%;
+        }
+
+        @media screen and (max-width: 700px) {
+            .banner--image {
+                margin-left: -40%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .banner--image {
+                margin-left: -45%;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .banner--image {
+                margin-left: -55%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .banner--image {
+                margin-left: -65%;
+            }
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        .banner--image {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+/**********          TITLE          **********/
+@media screen {
+    @media screen and (orientation: landscape) {
+        .banner--title {
+            left: 0;
+            top: 150px;
+            width: 100%;
+            position: absolute;
+            font-size: 8vw !important;
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 8px var(--red),
+                0 0 10px var(--red),
+                0 0 20px var(--red);
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        .banner--title {
+            left: 0;
+            top: 90px;
+            width: 100%;
+            position: absolute;
+            font-size: 14vw !important;
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 10px var(--red),
+                0 0 20px var(--red);
+        }
+    }
+}
+
+/**********          TAGLINE          **********/
+@media screen {
+    @media screen and (orientation: landscape) {
+        .banner--tagline {
+            left: 0;
+            top: calc(150px + 6.8vw);
+            width: 100%;
+            position: absolute;
+            font-size: 2.6vw !important;
+            font-family: "Race sport", sans-serif !important;
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 8px var(--blue),
+                0 0 10px var(--blue),
+                0 0 20px var(--blue);
+        }
+
+        .banner--tagline span {
+            color: var(--blue);
+        }
+
+        .main--academy .banner--tagline {
+            width: auto;
+            position: absolute;
+            margin-left: 61vw;
+            top: calc(150px + 7.5vw);
+            transform: rotate(-15deg);
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 8px var(--yellow),
+                0 0 10px var(--yellow),
+                0 0 20px var(--yellow);
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        .banner--tagline {
+            left: 0;
+            top: calc(90px + 12vw);
+            width: 100%;
+            position: absolute;
+            font-size: 4.6vw !important;
+            font-family: "Race sport", sans-serif !important;
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 8px var(--blue),
+                0 0 10px var(--blue),
+                0 0 20px var(--blue);
+        }
+
+        .banner--tagline span {
+            color: var(--blue);
+        }
+
+        .main--academy .banner--tagline {
+            width: auto;
+            position: absolute;
+            margin-left: 58vw;
+            top: calc(90px + 12vw);
+            transform: rotate(-15deg);
+            text-shadow: 0 0 5px var(--dark-background),
+                0 0 8px var(--yellow),
+                0 0 10px var(--yellow),
+                0 0 20px var(--yellow);
+        }
+    }
+}
+
+/**********          CTA          **********/
+@media screen {
+    @media screen and (orientation: landscape) {
+        .banner--cta {
+            left: 0;
+            top: 45vw;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        .banner--cta {
+            left: 0;
+            bottom: 40vw;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+        }
+    }
+}
+
+/**********          SCROLL ICON          **********/
+@media screen {
+    @media screen and (orientation: landscape) {
+        .banner--scroll-icon {
+            top: 46vw;
+            width: 3.13vw;
+            height: 1.5vw;
+            position: absolute;
+            left: calc(50% - 5.13vw/2);
+
+            box-sizing: content-box;
+            border: 1vw solid transparent;
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        .banner--scroll-icon {
+            bottom: 35vw;
+            width: 6.13vw;
+            height: 2.5vw;
+            position: absolute;
+            left: calc(50% - 8.13vw/2);
+
+            box-sizing: content-box;
+            border: 1vw solid transparent;
+        }
+    }
+}
+
+/**********                           **********/
+/**********          ACADEMY          **********/
+/**********                           **********/
+@media screen {}

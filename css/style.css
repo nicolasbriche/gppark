@@ -1,0 +1,165 @@
+@import url(header.css);
+@import url(presentation.css);
+@import url(schedule.css);
+@import url(contact.css);
+@import url(prices.css);
+@import url(numbers.css);
+@import url(pictures.css);
+@import url(partners.css);
+@import url(footer.css);
+@import url(banner.css);
+@import url(index.css);
+
+:root {
+    --red: #E32527;
+    --blue: #36B0E0;
+    --yellow: #EDFF00;
+    --background: #201F2F;
+    --text-color: aliceblue;
+    --dark-background: #171622;
+
+    --glass-blur: blur(5px);
+    --glass-shadow: rgba(0, 0, 0, 0.3);
+    --glass-color: rgba(255, 255, 255, 0.1);
+
+}
+
+@font-face {
+    font-family: 'Race Sport';
+    src: url(../font/Race\ Sport.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    background: var(--background);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Race Sport';
+}
+
+.section-tagline {
+    font-size: 10px;
+    margin-top: -10px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.small-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+.small-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.legend-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A7A7AD;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+    .section-title {
+        font-size: 42px;
+    }
+
+    .section-tagline {
+        font-size: 12px;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .section-title {
+        font-size: 52px;
+    }
+
+    .section-tagline {
+        font-size: 14px;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .section-title {
+        font-size: 62px;
+    }
+
+    .section-tagline {
+        font-size: 16px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .section-title {
+        font-size: 72px;
+    }
+
+    .section-tagline {
+        font-size: 16px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .section-title {
+        font-size: 82px;
+    }
+
+    .section-tagline {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.shadow {
+    filter: drop-shadow(0px 0px 10px var(--blue));
+}
+
+.main--academy .shadow {
+    filter: drop-shadow(0px 0px 10px var(--yellow));
+}
+
+.footer--academy .shadow {
+    filter: drop-shadow(0px 0px 10px var(--yellow));
+}
+
+* {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}

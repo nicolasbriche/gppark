@@ -1,0 +1,242 @@
+/**********         PRICES          **********/
+@media screen {
+    .prices {
+        padding: 50px 0;
+        position: relative;
+    }
+}
+
+/**********         CARDS ROW          **********/
+@media screen {
+    .prices--cards-row {
+        gap: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 600px) {
+        .prices--cards-row {
+            flex-flow: row wrap;
+            align-items: start;
+            justify-content: center;
+            max-width: 550px;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .prices--cards-row {
+            flex-flow: row nowrap;
+            max-width: none;
+        }
+    }
+}
+
+/**********         CARDS          **********/
+@media screen {
+    .prices--card {
+        width: 260px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        border-radius: 10px;
+
+        backdrop-filter: var(--glass-blur);
+        background: var(--glass-color);
+        box-shadow: 10px 10px 20px var(--glass-shadow);
+    }
+
+    .main--academy .prices--card {
+        width: 300px;
+    }
+
+    .prices--card--bike-location {
+        margin-top: -5px;
+    }
+
+    .prices--card--events-explanation {
+        line-height: 13px;
+    }
+
+    .prices--card--price {
+        display: flex;
+        flex-flow: row nowrap;
+
+        font-weight: 700;
+        font-size: 50px;
+
+        justify-content: center;
+
+        margin-top: 20px;
+    }
+
+    .prices--card--price p:nth-child(1),
+    .prices--card--price p:nth-child(3) {
+        font-weight: 400;
+    }
+
+    .prices--card--price p:nth-child(1) {
+        margin-top: 5px;
+    }
+
+    .prices--card--price p:nth-child(3) {
+        margin-top: 35px;
+    }
+
+    .prices--card--driving-licence {
+        text-transform: uppercase;
+        color: var(--blue) !important;
+    }
+
+    .main--academy .prices--card--driving-licence {
+        color: var(--yellow) !important;
+    }
+
+    .prices--card--button {
+        width: 120px;
+        height: 40px;
+
+        background: var(--background);
+        border-radius: 20px;
+        border: none;
+
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+        text-align: center;
+
+        color: var(--text-color);
+        transition: 0.5s ease;
+
+        margin-top: 20px;
+    }
+
+    .prices--card--button:hover {
+        cursor: pointer;
+        text-shadow: 0 0 5px var(--text-color),
+            0 0 10px var(--text-color),
+            0 0 20px var(--text-color);
+
+        box-shadow: 0 0 5px black,
+            0 0 20px var(--blue),
+            0 0 50px var(--blue),
+            0 0 100px var(--blue);
+    }
+
+    .main--academy .prices--card--button:hover {
+        box-shadow: 0 0 5px black,
+            0 0 20px var(--yellow),
+            0 0 50px var(--yellow),
+            0 0 100px var(--yellow);
+    }
+
+    .prices--card--table {
+        color: var(--text-color);
+        border-collapse: collapse;
+
+        width: 80%;
+
+        margin-top: 20px;
+    }
+
+    .prices--card--table td {
+        text-align: left;
+        border-bottom: 1px solid var(--text-color);
+    }
+
+    .prices--card--table td:last-child {
+        text-align: right;
+    }
+
+    .prices--card--table tr:last-child td {
+        border: none;
+    }
+
+    .prices--card--table-caption {
+        text-align: left !important;
+        line-height: 13px;
+    }
+
+    .prices--card--include {
+        margin: 0 auto;
+
+        list-style: none;
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .prices--card--include li {
+        position: relative;
+        margin-left: 25px;
+    }
+
+    .prices--card--include li::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -25px;
+        background-image: url(../img/svg/include.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+
+    .prices--card:nth-child(1) .prices--card--include,
+    .prices--card:nth-child(2) .prices--card--include {
+        margin-top: 77px;
+    }
+
+    .prices--card:nth-child(3) .prices--card--include {
+        margin-top: 57px;
+    }
+
+    .prices--card--stuff {
+        margin-top: 20px;
+    }
+}
+
+/**********         BACKGROUND          **********/
+@media screen {
+    .prices--background {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        height: 100%;
+        position: absolute;
+        opacity: .5;
+    }
+
+    .prices--background-circle {
+        width: 50vw;
+        height: 50vw;
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(10vw);
+    }
+
+    .prices--background-red-circle {
+        top: -2vw;
+        left: 45vw;
+        background-color: var(--red);
+    }
+
+    .prices--background-blue-circle {
+        background-color: var(--blue);
+        top: 34vw;
+        left: 14vw;
+    }
+
+    .main--academy .prices--background-red-circle {
+        background-color: var(--yellow);
+    }
+
+    .main--academy .prices--background-blue-circle {
+        background-color: var(--red);
+    }
+}

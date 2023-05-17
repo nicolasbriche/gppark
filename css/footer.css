@@ -1,0 +1,86 @@
+/**********          FOOTER          **********/
+@media screen {
+    footer {
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 50px 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        footer {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .footer--title {
+        color: var(--blue) !important;
+        text-transform: uppercase;
+        text-align: left !important;
+        margin-bottom: 10px;
+    }
+
+    .footer--academy .footer--title {
+        color: var(--yellow) !important;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .footer--title {
+            text-align: center !important;
+        }
+    }
+}
+
+/**********          LEFT          **********/
+@media screen {
+    .footer--left-side {
+        margin-left: 50px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .footer--left-side {
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+/**********          RIGHT          **********/
+@media screen {
+    .footer--right-side {
+        margin-left: auto;
+        margin-right: 50px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 50px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .footer--right-side {
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+/**********          CONTACT          **********/
+@media screen {
+    .footer--contact ul {
+        margin-top: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    .footer--contact svg {
+        height: 50px;
+    }
+}
+
+/**********          PLAN          **********/
+@media screen {
+    .footer--plan a {
+        color: var(--text-color);
+    }
+}

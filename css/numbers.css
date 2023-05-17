@@ -1,0 +1,104 @@
+/**********          NUMBERS          **********/
+@media screen {
+    .numbers {
+        display: flex;
+        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        height: 40vw;
+        background-size: 200%;
+        background-position: 80% center;
+        background-image: url("../img/tire track.png");
+    }
+}
+
+/**********          FIRST          **********/
+@media screen {
+    .numbers--first-icon {
+        margin-top: -15vw;
+    }
+}
+
+/**********          SECOND          **********/
+@media screen {
+    .numbers--second-icon {
+        margin-top: -10vw;
+    }
+}
+
+/**********          THIRD          **********/
+@media screen {
+    .numbers--third-icon {
+        margin-top: -2vw;
+    }
+}
+
+/**********          FOURTH          **********/
+@media screen {
+    .numbers--fourth-icon {
+        margin-top: 5vw;
+    }
+}
+
+/**********          ICONS          **********/
+@media screen {
+    .numbers--icon {
+        width: 100px;
+    }
+
+    .numbers--icon svg {
+        width: 50px;
+        margin-left: 25px;
+    }
+
+    .numbers--icon p {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    @media screen and (min-width: 600px) {
+        .numbers--icon {
+            width: 125px;
+        }
+
+        .numbers--icon svg {
+            width: 75px;
+            margin-left: 25px;
+        }
+
+        .numbers--icon p {
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .numbers--icon {
+            width: 200px;
+        }
+
+        .numbers--icon svg {
+            width: 150px;
+            margin-left: 25px;
+        }
+
+        .numbers--icon p {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .numbers--icon {
+            width: 250px;
+        }
+
+        .numbers--icon svg {
+            width: 200px;
+            margin-left: 25px;
+        }
+
+        .numbers--icon p {
+            font-size: 16px;
+        }
+    }
+}
