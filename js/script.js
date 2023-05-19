@@ -1,5 +1,10 @@
 // alert(screen.width);
 
+window.addEventListener('load', function () {
+    var loader = document.getElementById('loader');
+    loader.style.display = 'block';
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     var burgerIcon = document.getElementById("header--burger-checkbox");
     var menu = document.getElementById("header--nav");
@@ -32,4 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+
+    // On cache le loader
+    var loader = document.getElementById('loader');
+    loader.style.display = 'none';
 });
