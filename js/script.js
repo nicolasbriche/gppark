@@ -2,7 +2,7 @@
 
 window.addEventListener('load', function () {
     var loader = document.getElementById('loader');
-    loader.style.display = 'block';
+    loader.style.display = 'none';
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,8 +37,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
-
-    // On cache le loader
-    var loader = document.getElementById('loader');
-    loader.style.display = 'none';
 });
