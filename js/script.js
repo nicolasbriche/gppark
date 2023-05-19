@@ -2,7 +2,9 @@
 
 window.addEventListener('load', function () {
     var loader = document.getElementById('loader');
-    loader.style.display = 'none';
+    setTimeout(function () {
+        loader.style.display = 'none';
+    }, 1000);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
