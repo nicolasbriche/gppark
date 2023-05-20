@@ -1,8 +1,26 @@
 .loader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: red;
+}
+
+.loader--animation {
     width: 100px;
     height: 100px;
-    position: absolute;
-    left: calc(50% - 50px);
-    top: calc(50% - 50px);
+    margin: auto;
     background-color: red;
+    animation: loader--animation .5s ease-in-out infinite;
+}
+
+@keyframes loader--animation {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
 }
