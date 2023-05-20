@@ -1,8 +1,14 @@
 // alert(screen.width);
 
+// On bloque le scroll
+document.getElementsByTagName("html")[0].style.setProperty("overflow", "hidden");
+
 window.addEventListener('load', function () {
     var loader = document.getElementById('loader');
     loader.style.display = 'none';
+
+    // On active le scroll
+    document.getElementsByTagName("html")[0].style.setProperty("overflow", "visible");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
