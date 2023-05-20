@@ -1,5 +1,5 @@
 .choice--background {
-    background-image: url(../img/Welcome.png);
+    background-image: url(../img/welcome.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -45,24 +45,24 @@
 }
 
 .choice--loisir:hover~.choice--background {
-    background-image: url(../img/Welcome-loisir.png);
+    background-image: url(../img/welcome-loisir.jpg);
 }
 
 .choice--academy:hover~.choice--background {
-    background-image: url(../img/Welcome-academy.png);
+    background-image: url(../img/welcome-academy.jpg);
 }
 
 @media screen and (orientation: portrait) {
     .choice--background {
-        background-image: url(../img/Welcome\ mobile.png);
+        background-image: url(../img/welcome-mobile.jpg);
     }
 
     .choice--loisir:hover~.choice--background {
-        background-image: url(../img/Welcome\ mobile\ loisir.png);
+        background-image: url(../img/welcome-mobile-loisir.jpg);
     }
 
     .choice--academy:hover~.choice--background {
-        background-image: url(../img/Welcome\ mobile\ academy.png);
+        background-image: url(../img/welcome-mobile-academy.jpg);
     }
 
     .choice--item {
