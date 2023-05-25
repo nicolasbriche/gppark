@@ -50,3 +50,18 @@
         text-align: right;
     }
 }
+
+/**********          TABLE          **********/
+@media screen {
+    .schedule ul {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 25px;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .schedule ul svg {
+        height: 100px;
+    }
+}

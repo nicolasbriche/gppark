@@ -198,6 +198,10 @@
     .prices--card--stuff {
         margin-top: 20px;
     }
+
+    .prices--card--stuff span {
+        color: var(--red);
+    }
 }
 
 /**********         BACKGROUND          **********/
@@ -240,3 +244,25 @@
         background-color: var(--red);
     }
 }
+
+
+/**********          STUFF EXPLANATION          **********/
+@media screen {
+    .prices--stuff-explanation {
+        /* text-align: left !important; */
+        /* margin: 50px 0 25px 50px; */
+        margin-top: 25px;
+    }
+
+    .prices--stuff-explanation span {
+        color: var(--red);
+    }
+}
+
+/**********          GIFT CARD          **********/
+/* @media screen {
+    .prices--gift-card { */
+/* text-align: left !important; */
+/* margin-left: 50px; */
+/* }
+} */
