@@ -1,9 +1,7 @@
-Faire le logo PMR avec les 4 icones
-Mettre réservation fortement recommandée en rouge
-
 Dans loisir et academy ajouter les photo "sms"
 
 
+Faire le logo PMR avec les 4 icones
 Ajouter un bouton pour switch entre horaires hiver et été
 Faire les devis d'impression pour le livret
 
