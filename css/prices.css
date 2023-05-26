@@ -37,6 +37,7 @@
 @media screen {
     .prices--card {
         width: 260px;
+        height: 520;
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -51,7 +52,8 @@
     }
 
     .main--academy .prices--card {
-        width: 300px;
+        width: 320px;
+        margin-bottom: 25px;
     }
 
     .prices--card--bike-location {
@@ -92,6 +94,10 @@
         color: var(--blue) !important;
     }
 
+    .prices--card:nth-child(4) .prices--card--driving-licence {
+        margin-top: 3px;
+    }
+
     .main--academy .prices--card--driving-licence {
         color: var(--yellow) !important;
     }
@@ -113,6 +119,8 @@
         transition: 0.5s ease;
 
         margin-top: 20px;
+
+        position: relative;
     }
 
     .prices--card--button:hover {
@@ -186,13 +194,12 @@
         height: 20px;
     }
 
-    .prices--card:nth-child(1) .prices--card--include,
     .prices--card:nth-child(2) .prices--card--include {
-        margin-top: 77px;
+        margin-top: 39px;
     }
 
-    .prices--card:nth-child(3) .prices--card--include {
-        margin-top: 57px;
+    .main--academy .prices--card--include {
+        margin-top: 20px !important;
     }
 
     .prices--card--stuff {
@@ -200,7 +207,19 @@
     }
 
     .prices--card--stuff span {
-        color: var(--red);
+        line-height: 0;
+        font-size: 2rem;
+        color: var(--blue);
+        font-variant-position: sub;
+        text-shadow: 1px 1px 1px var(--glass-shadow);
+    }
+
+    .prices--card:nth-child(4) .prices--card--stuff {
+        margin-top: 48px;
+    }
+
+    .main--academy .prices--card:nth-child(1) .prices--card--stuff {
+        margin: 37px 0;
     }
 }
 
@@ -245,17 +264,55 @@
     }
 }
 
+/**********          PHONE NUMBER          **********/
+@media screen {
+    .test-phone {
+        opacity: 0;
+        z-index: 2;
+        width: 200px;
+        bottom: -44px;
+        padding: 15px 0;
+        text-shadow: none;
+        position: absolute;
+        text-align: center;
+        transform: scale(0);
+        border-radius: 10px;
+        left: calc(50% - 100px);
+        transition: .2s ease-in-out;
+        background-color: var(--background);
+        box-shadow: 10px 10px 10px var(--glass-shadow);
+    }
+
+    .test-phone::after {
+        top: -5px;
+        width: 10px;
+        content: "";
+        height: 10px;
+        position: absolute;
+        left: calc(50% - 5px);
+        transform: rotate(45deg);
+        background-color: var(--background);
+    }
+
+    .test-phone.open {
+        opacity: 1;
+        bottom: -92px;
+        transform: scale(1);
+    }
+}
 
 /**********          STUFF EXPLANATION          **********/
 @media screen {
     .prices--stuff-explanation {
-        /* text-align: left !important; */
-        /* margin: 50px 0 25px 50px; */
         margin-top: 25px;
     }
 
     .prices--stuff-explanation span {
-        color: var(--red);
+        line-height: 0;
+        font-size: 2rem;
+        color: var(--blue);
+        font-variant-position: sub;
+        text-shadow: 1px 1px 1px var(--glass-shadow);
     }
 }
 
@@ -266,3 +323,16 @@
 /* margin-left: 50px; */
 /* }
 } */
+
+
+.prices--social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.prices--social-media svg {
+    height: 100px;
+}

@@ -1,0 +1,75 @@
+/**********          CAROUSEL          **********/
+@media screen {
+    .gift-cards--car {
+        width: 80%;
+        max-width: 765px;
+        height: auto;
+        overflow: hidden;
+        margin: 50px auto;
+        position: relative;
+    }
+}
+
+/**********          IMG ROW          **********/
+@media screen {
+    .car--img-row {
+        display: flex;
+        flex-flow: row nowrap;
+        transition: .5s ease-in-out;
+    }
+}
+
+/**********          CAROUSEL IMG          **********/
+@media screen {
+    .gift-cards--car img {
+        width: 100%;
+    }
+}
+
+/**********          CAROUSEL ARROWS          **********/
+@media screen {
+
+    .car--arrow {
+        top: 50%;
+        height: 30px;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        position: absolute;
+    }
+
+    #car--left-arrow {
+        left: 0;
+        rotate: 90deg;
+        transform: translateX(-50%);
+    }
+
+    #car--right-arrow {
+        right: 0;
+        rotate: -90deg;
+        transform: translateX(50%);
+    }
+}
+
+/**********          CAROUSEL INDEX          **********/
+@media screen {
+    .car--index {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 10px auto;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .index {
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--blue);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .index.active {
+        background-color: var(--blue);
+    }
+}

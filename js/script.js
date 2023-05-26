@@ -43,4 +43,60 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
     }
+
+
+    // Affichage du numéro dans la section tarifs
+    var buttons = document.getElementsByClassName("prices--card--button");
+    var testPhones = document.getElementsByClassName("test-phone");
+    for (let i = 0; i < buttons.length; i++) {
+        const button = buttons[i];
+        button.onclick = function () {
+            testPhones[i].classList.toggle("open");
+        }
+    }
+
+    // Gestion du carousel
+    var leftArrow = document.getElementById("car--left-arrow");
+    var rightArrow = document.getElementById("car--right-arrow");
+    var indexTab = document.getElementsByClassName("index");
+    var rowImg = document.getElementById("imgRow");
+    var nbImg = 5;
+    var widthImg = document.getElementById("gift-cards--car").offsetWidth;
+    var positionCar = 0;
+    var indexCar = 0;
+
+    leftArrow.onclick = function () {
+        indexTab[indexCar].classList.toggle("active");
+        if (indexCar == 0) {
+            indexCar = nbImg - 1;
+        } else {
+            indexCar--;
+        }
+        positionCar = indexCar * -widthImg;
+        rowImg.style.transform = "translateX(" + positionCar + "px)";
+        indexTab[indexCar].classList.toggle("active");
+    }
+
+    rightArrow.onclick = function () {
+        indexTab[indexCar].classList.toggle("active");
+        if (indexCar == nbImg - 1) {
+            indexCar = 0;
+        } else {
+            indexCar++;
+        }
+        positionCar = indexCar * -widthImg;
+        rowImg.style.transform = "translateX(" + positionCar + "px)";
+        indexTab[indexCar].classList.toggle("active");
+    }
+
+    for (let i = 0; i < indexTab.length; i++) {
+        const index = indexTab[i];
+        index.onclick = function () {
+            indexTab[indexCar].classList.toggle("active");
+            indexCar = i;
+            positionCar = indexCar * -widthImg;
+            rowImg.style.transform = "translateX(" + positionCar + "px)";
+            indexTab[indexCar].classList.toggle("active");
+        }
+    }
 });
